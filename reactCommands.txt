@@ -1,0 +1,9 @@
+INSTALL NEW REACT APP
+--------------------
+npx create-react-app online-shopping-cart
+cd my-app
+npm start
+**********
+INSTALL ROUTER
+--------------------
+npm add react-router
