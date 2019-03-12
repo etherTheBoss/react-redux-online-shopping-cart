@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function ProductListingItem(props){
+    const thisItemInCart = props.cart.filter(item => item.id === props.product.id)[0];
     return <div className="product-list-item">
                 <h3>{props.product.name}</h3>
                 <img
@@ -13,9 +14,10 @@ export default function ProductListingItem(props){
                 <div>
                     <button
                     onClick={()=>props.addToCart(props.product)}
-                    >
-                        
-                        Add to Cart
+                    >  
+                        Add to Cart ({
+                            (thisItemInCart && thisItemInCart.quantity) || 0
+                        })
                     </button>
                 </div>
             </div>
