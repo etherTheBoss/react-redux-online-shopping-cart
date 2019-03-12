@@ -10,7 +10,7 @@ function ProductListing(props){
                         <ProductListingItem 
                             product={product} 
                             addToCart = {props.addToCart}
-                            cart= {cartItemsWithQuantity(props.cart)}
+                            cartItem= {props.cart.filter(cartItem => cartItem.id === product.id)[0]}
                         />)
                 }
             </div>
