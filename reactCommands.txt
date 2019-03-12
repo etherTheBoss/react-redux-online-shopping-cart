@@ -13,7 +13,11 @@ npm add react-router
 INSTALL REDUX
 --------------------
 npm add react-redux redux
+npm i redux-thunk
 **********
+
+note :  https://www.youtube.com/watch?v=T_HtlP80UYc&t=124s  going on 48mins
+        https://www.youtube.com/watch?v=5G3zSueEYuo
 
 
 
